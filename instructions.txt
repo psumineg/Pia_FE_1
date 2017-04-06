@@ -1,0 +1,9 @@
+Look at the screenshot.png
+Implement that into an html page.
+index.html has been setup to point to the CSS page.
+Add CSS styling into css/main.css
+Use images in images folder to construct the page.
+
+Input doesn't need to be working, just make it look like screenshot.
+
+Approx time: 1.5hrs to complete
