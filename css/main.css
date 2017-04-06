@@ -81,7 +81,12 @@ select#drop-button{
 	border-radius: 2px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	cursor:pointer;
+	border: 0;  
+	background: white url(http://www.geticket.it/skin/frontend/geticket/default/images/Down_red_arrow.png) no-repeat 95% center;
+	text-indent: 0.01px; /* Removes default arrow from firefox*/
+	text-overflow: "";  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
+	padding: 10px;
+	background-size: 7px;
 }
 
 select#drop-button2{
@@ -97,6 +102,12 @@ select#drop-button2{
 	border-radius: 2px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+	border: 0;  
+	background: white url(http://www.geticket.it/skin/frontend/geticket/default/images/Down_red_arrow.png) no-repeat 92% center;
+	text-indent: 0.01px;
+	text-overflow: "";
+	padding: 10px;
+	background-size: 7px;
 }
 
 select#disable-select{
@@ -112,6 +123,12 @@ select#disable-select{
 	border-radius: 2px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+	border: 0;  
+	background: white url(https://www.materialui.co/materialIcons/navigation/arrow_drop_down_grey_192x192.png) no-repeat 97% center;
+	text-indent: 0.01px;
+	text-overflow: "";
+	padding-left: 10px;
+	background-size: 17px;
 }
 
 select#disable-select2{
@@ -127,19 +144,12 @@ select#disable-select2{
 	border-radius: 2px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: url("60995.png") no-repeat right center;
-}
-
-select:after{
-    content:"▼";    
-    padding: 12px 9px;
-    position: relative;  
-    z-index: 1;
-    text-align: center;
-    width: 10%;
-    height: 100%;      
-    pointer-events: none;
-    box-sizing: border-box;   
+	border: 0;  
+	background: white url(https://www.materialui.co/materialIcons/navigation/arrow_drop_down_grey_192x192.png) no-repeat 97% center;
+	text-indent: 0.01px;
+	text-overflow: ""; 
+	padding-left: 10px;
+	background-size: 17px;
 }
 
 input[type=text], select {
@@ -176,9 +186,3 @@ a.link{
     margin:50px;
 }
 
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
