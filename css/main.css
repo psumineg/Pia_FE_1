@@ -5,20 +5,20 @@
 	overflow:auto;
 }
 
+.top-container{
+	text-align: center;
+	margin: 20px 30px 0 30px;
+}
+
 .left{
-	float: left;
-	padding-left: 100px;
-	padding-top: 25px;
-	padding-bottom: 7px;
-	padding-right: 25px;
+	display: inline-block;
+	width:48%;
 }
 
 .right{
-	float: left;
-	padding-top: 25px;
-	padding-bottom: 7px;
-	padding-right: 75px;
-	padding-left:5px;
+	display: inline-block;
+	width:48%;
+
 }
 
 .font-all{
@@ -33,14 +33,12 @@
 }
 
 h2{
-	margin: 175px;
 	display:inline;
-	float:center;
+	text-align: center;
 }
 h3{
-	margin: 175px;
 	display:inline;
-	float:center;
+	text-align: center;
 }
 
 .button{
@@ -68,9 +66,9 @@ h3{
 }
 
 
-select#drop-button{
+select#drop-button,select#drop-button2{
 	background-color: white;
-	color:black;
+	color:#666666;
 	border: 1px solid #ccc;
 	height: 38px;
 	width: 177px;
@@ -82,35 +80,18 @@ select#drop-button{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border: 0;  
-	background: white url(http://www.geticket.it/skin/frontend/geticket/default/images/Down_red_arrow.png) no-repeat 95% center;
-	text-indent: 0.01px; /* Removes default arrow from firefox*/
-	text-overflow: "";  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
-	padding: 10px;
-	background-size: 7px;
-}
-
-select#drop-button2{
-	background-color: white;
-	color:black;
-	border: 1px solid #ccc;
-	height: 38px;
-	width: 157px;
-	font-family: "Tahoma";
-	font-size: 12px;
-	text-align: left;
-	margin: 15px 5px 5px 5px;
-	border-radius: 2px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	border: 0;  
-	background: white url(http://www.geticket.it/skin/frontend/geticket/default/images/Down_red_arrow.png) no-repeat 92% center;
+	background: #fafafa url(http://www.geticket.it/skin/frontend/geticket/default/images/Down_red_arrow.png) no-repeat 95% center;
 	text-indent: 0.01px;
 	text-overflow: "";
 	padding: 10px;
 	background-size: 7px;
 }
 
-select#disable-select{
+select#drop-button2{
+	width: 157px;
+}
+
+select#disable-select,select#disable-select2{
 	background-color: #e6e6e6;
 	color:#b3b3b3;
 	border: 1px solid #ccc;
@@ -124,40 +105,26 @@ select#disable-select{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border: 0;  
-	background: white url(https://www.materialui.co/materialIcons/navigation/arrow_drop_down_grey_192x192.png) no-repeat 97% center;
+	background: #e6e6e6 url(https://www.materialui.co/materialIcons/navigation/arrow_drop_down_grey_192x192.png) no-repeat 97% center;
 	text-indent: 0.01px;
 	text-overflow: "";
-	padding-left: 10px;
+	padding: 10px;
 	background-size: 17px;
 }
 
 select#disable-select2{
-	background-color: #e6e6e6 !important;
-	color:#b3b3b3;
-	border: 1px solid #ccc;
-	height: 38px;
 	width: 157px;
-	font-family: "Tahoma";
-	font-size: 12px;
-	text-align: left;
-	margin: 15px 5px 5px 5px;
-	border-radius: 2px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	border: 0;  
-	background: white url(https://www.materialui.co/materialIcons/navigation/arrow_drop_down_grey_192x192.png) no-repeat 97% center;
-	text-indent: 0.01px;
-	text-overflow: ""; 
-	padding-left: 10px;
-	background-size: 17px;
 }
 
-input[type=text], select {
-	height: 35px;
+input[type=text].zip-input{
+	height: 38px;
 	width: 50px;
     border: 1px solid #ccc;
     border-radius: 2px;
     font-family: "Tahoma";
+    margin: 15px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 a.link{
@@ -186,3 +153,73 @@ a.link{
     margin:50px;
 }
 
+@media (max-width: 1270px){
+	.left,.right{
+		width:40%;
+	}
+
+	.button, .button2{
+		width:100%;
+	}
+	.drop-button,.drop-button2, #disable-select, #disable-select2{
+		width:177px;
+	}
+}
+
+@media (max-width: 1120px){
+	.left,.right{
+		width:32%;
+	}
+
+	.button, .button2{
+		width:100%;
+	}
+	.drop-button,.drop-button2, #disable-select, #disable-select2{
+		width:177px;
+	}
+}
+
+@media (max-width: 860px){
+	.left,.right{
+		display: block center;
+		width:80%;
+	}
+
+	.button, .button2{
+		width:100%;
+	}
+
+	.drop-button,.drop-button2, #disable-select, #disable-select2{
+		width:100%;
+	}
+}
+
+@media (max-width: 700px){
+	.left,.right{
+		display: block center;
+		width:80%;
+	}
+
+	.button, .button2{
+		width:100%;
+	}
+
+	.drop-button,.drop-button2, #disable-select, #disable-select2{
+		width:100%;
+	}
+}
+
+@media (max-width: 480px){
+	.left,.right{
+		display: block;
+		float: left;
+		width:100%;
+	}
+
+	.button, .button2{
+		width:100%;
+	}
+	.drop-button,.drop-button2, #disable-select, #disable-select2{
+		width:100%;
+	}
+}
